@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/feather-icons@4.29.2/dist/feather.min.js"></script>
+    <title>Contact - Lifestyle Vibes</title>
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg sticky-top shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand me-auto mx-lg-1" href="#">Lifestyle Vibes</a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Lifestyle Vibes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-3" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-3" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-3 active" aria-current="page" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#subscribe" class="subscribe-button mx-lg-1">Subscribe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!--section 1: bg image ama judul-->
+    <section class="contact-header w-100 text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Contact Us</h1>
+            <p class="lead fw-bold">We would love to hear from you! Whether you have questions or just want to connect, feel free to reach out.</p>
+        </div>
+    </section>
+
+    <!--section 2: form sama map-->
+    <section class="container-fluid py-5">
+        <div class="contact-form container">
+            <div class="row shadow rounded">
+                <div class="col-md-7 p-5">
+                    <form id="form-for-contact">
+                        <div class="row">
+                            <div class="col mb-3">
+                                <label class="form-label">First Name</label>
+                                <input type="text" class="form-control" placeholder="Enter your first name" required>
+                            </div>
+                            <div class="col mb-3">
+                                <label class="form-label">Last Name</label>
+                                <input type="text" class="form-control" placeholder="Enter your last name" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" rows="3" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <!-- Button trigger modal -->
+                        <button type="submit" class="btn btn-primary" data-bs-target="#staticBackdrop">
+                            Submit
+                        </button>
+                    </form>
+
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Thank you...</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            Your response means a lot to us!
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Ok</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 d-flex align-items-center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.7117799441494!2d106.78601107398947!3d-6.169334993817971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f65c8572640d%3A0xc0a066d78372614e!2sUniversitas%20Tarumanagara!5e0!3m2!1sid!2sid!4v1729913608236!5m2!1sid!2sid" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--section 3: icon contact-->
+    <section class="py-3">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Tarumanagara+University" target="_blank" class="text-decoration-none">
+                        <div class="contact-info-card p-4 shadow rounded">
+                            <i data-feather="map-pin" class="contact-info-icon mb-3"></i>
+                            <h5 class="text-dark">Address</h5>
+                            <p class="text-dark">Jl. Letjen S. Parman No. 1, Tomang</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="mailto:lifestylesvibes@gmail.com" class="text-decoration-none text-dark">
+                        <div class="contact-info-card p-4 shadow rounded">
+                            <i data-feather="mail" class="contact-info-icon mb-3"></i>
+                            <h5>Email</h5>
+                            <p>lifestylesvibes@gmail.com</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="tel:+6281234567890" class="text-decoration-none">
+                        <div class="contact-info-card p-4 shadow rounded">
+                            <i data-feather="phone" class="contact-info-icon mb-3"></i>
+                            <h5 class="text-dark">Phone</h5>
+                            <p class="text-dark">+6281234567890</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer class="p-5 bg-dark" id="subscribe">
+        <div class="container">
+            <!--row 1: subscribe-->
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="footer-form p-4 rounded text-center">
+                        <h5 class="fw-bold">Join Our Community</h5>
+                        <p>Subscribe for the latest lifestyle updates</p>
+                        <form class="d-flex flex-column align-items-center">
+                            <div class="d-flex w-100 mb-3">
+                                <input type="text" class="form-control me-2" placeholder="First Name" required>
+                                <input type="email" class="form-control" placeholder="Email" required>
+                            </div>
+                            <button class="btn btn-primary mt-2 w-100" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    
+            <!--row 2: copyright-->
+            <div class="row">
+                <div class="col text-center text-light">
+                    <p>&copy; 2024 Lifestyle Vibes. All rights reserved.</p>
+                    <p><a href="#" class="text-decoration-none text-light">Privacy Policy</a> • <a href="#" class="text-decoration-none text-light">Terms & Conditions</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        feather.replace();
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById("form-for-contact");
+
+            form.addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                if (form.checkValidity()) {
+                    //klo valid, keluar modal
+                    const modal = new bootstrap.Modal(document.getElementById("staticBackdrop"));
+                    modal.show();
+
+                    form.reset();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
